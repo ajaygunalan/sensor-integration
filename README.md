@@ -29,7 +29,7 @@ As an initial development, the DGS-CO was chosen for measuring Carbon Monoxide. 
 
 **Description**
 
-Requirments:
+**Requirments:**
 
 Humans usually utilize sound source localization, separation, and identification enabling them to
 operate properly in hazardous environments [29]. However, in robotic teleoperation, without the
