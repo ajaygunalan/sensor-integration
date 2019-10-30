@@ -16,6 +16,7 @@ As an initial development, the DGS-CO was chosen for measuring Carbon Monoxide. 
 
 * [Connection Diagram](https://github.com/ajaygunalan/sensor-integration/blob/master/gas_to_rpi.png)
 * [Sample Code](https://github.com/ajaygunalan/sensor-integration/blob/master/gas_sensor/pic/sample_code_for_algo.png)
+* [To configure UART](https://www.electronicwings.com/raspberry-pi/raspberry-pi-uart-communication-using-python-and-c)
 
 To see if the serial port is connceted use `sudo dmesg | grep tty`. You should get something like this:
 ```
