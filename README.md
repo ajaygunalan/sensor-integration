@@ -1,7 +1,7 @@
 # Sensor-integration
 Integration of Thermal Camera, Mic, Temperature and Gas Sensors with ubuntu.
 
-The history.txt contains the list of all commands used by the previous engineer to get the sensors work in rpi3. 
+The [history.txt](https://github.com/ajaygunalan/sensor-integration/blob/master/history.txt) contains the list of all commands used by the previous engineer to get the sensors work in rpi3. 
 
 ## To Do
 
