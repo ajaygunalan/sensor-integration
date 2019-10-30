@@ -1,0 +1,445 @@
+    1  ifconfig 'a
+    2  ./server 10000
+    3  ifconfig -a
+    4  [3~
+    5  git clone https://github.com/chenxiaoqino/udp-image-streaming.git
+    6  cd udp-image-streaming/
+    7  cmake . && make
+    8  cmake
+    9  sudo apt-get install cmake
+   10  cmake
+   11  cmake .
+   12  make
+   13  sudo apt-get update
+   14  sudo apt-get updgrade
+   15  sudo apt-get upgrade
+   16  sudo apt-get install build-essential cmake pkg-config
+   17  sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+   18  sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+   19  sudo apt-get install libxvidcore-dev libx264-dev
+   20  sudo apt-get install libgtk2.0-dev
+   21  $ sudo apt-get install libatlas-base-dev gfortran
+   22  sudo apt-get install libatlas-base-dev gfortran
+   23  cd ~
+   24  wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.1.0.zip
+   25  unzip opencv.zip
+   26  wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.1.0.zip
+   27  cd opencv
+   28  sudo apt-get install python3-dev
+   29  wget https://bootstrap.pypa.io/get-pip.py
+   30  pip install numpy
+   31  cd ~/opencv
+   32  cd opencv-3.1.0/
+   33  mkdir build
+   34  cd build/
+   35  cmake -D CMAKE_BUILD_TYPE=RELEASE     -D CMAKE_INSTALL_PREFIX=/usr/local     -D INSTALL_C_EXAMPLES=OFF     -D INSTALL_PYTHON_EXAMPLES=ON     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules     -D BUILD_EXAMPLES=ON ..
+   36  make -j4
+   37  make
+   38  cd ..
+   39  make
+   40  git checkout 3.1.0
+   41  cd ..
+   42  sudo apt-get install libopencv-dev
+   43  cd udp-image-streaming/
+   44  ls
+   45  cmake
+   46  make
+   47  cmake . &&make
+   48  client 10.255.24.67
+   49  ./client 10.255.24.67
+   50  ./client 10.255.24.67 10000
+   51  ./client 127.0.0.1 10000
+   52  ./client 10.255.24.67 10001
+   53  sudo nano /boot/config.txt
+   54  sudo reboot
+   55  ls
+   56  cd udp-image-streaming/
+   57  ls
+   58  ./client 10.255.42.67 10001
+   59  sudo modprobe w1-gpio
+   60  sudo modprobe w1-therm
+   61  cd /sys/bus/w1/devices
+   62  ls
+   63  cd 28-000008e5364f
+   64  cat w1_slave 
+   65  cd
+   66  netcat -u -l 5005
+   67  netcat -u -l 5006
+   68  no 
+   69  ~
+   70  dmesg | grep tty
+   71  sudo raspi-config
+   72  dmesg | grep tty
+   73  reboot now
+   74  sudo reboot now
+   75  dmesg | grep tty
+   76  sudo raspi-config
+   77  dmesg | grep tty
+   78  sudo reboot now
+   79  dmesg | grep tty
+   80  sudo raspi-config
+   81  dmesg | grep tty
+   82  sudo apt-get install putty
+   83  dmesg | grep tty
+   84  sudo raspi-config
+   85  dmesg | grep tty
+   86  sudo raspi-config
+   87  sudo reboot now
+   88  sudo raspi-config
+   89  dmesg | grep tty
+   90  sudo nano /boot/config.txt 
+   91  sudo systemctl stop serial-getty@ttyS0.service
+   92  sudo systemctl disable serial-getty@ttyS0.service
+   93  sudo nano /boot/cmdline.txt 
+   94  sudo raspi-config
+   95  sudo nano /boot/config.txt 
+   96  sudo reboot now
+   97  dmesg | grep tty
+   98  /dev/ttyS0
+   99  sudo /dev/ttyS0
+  100  setserial -g /dev/ttyS[0123]
+  101  /sys/class/tty
+  102  dir /sys/class/tty
+  103  dir /sys/class/tty/ttyS0
+  104  sudo tail -f /dev/ttyUSB0
+  105  sudo tail -f /dev/ttyS0
+  106  pip install pyserial
+  107  pip install serial
+  108  lsdev /dev/tty
+  109  list /dev/tty
+  110  ls /dev/tty
+  111  ls-dev /dev/tty
+  112  lsdev /dev/tty
+  113  ls /dev/tty
+  114  ls 
+  115  ls -l /dev/tty*
+  116  cat /dev/ttyS0
+  117  cat /dev/ttyAMA0
+  118  uname -a
+  119  sudo nano /boot/config.txt 
+  120  ls -l /dev
+  121  sudo nano /boot/cmdline.txt
+  122  screen serial0 9600
+  123  putty serial0 9600
+  124  putty ttyAMA0 9600
+  125  putty /dev/ttyAMA0 9600
+  126  putty -h
+  127  putty -help
+  128  putty -e
+  129  sudo apt install screen
+  130  sudo screen /dev/ttyS0
+  131  putty
+  132  screen
+  133  sudo screen /dev/ttyS0
+  134  sudo screen /dev/ttyS0
+  135  sudo screen /dev/ttyAMA0
+  136  reboot now
+  137  sudo reboot now
+  138  sudo screen /dev/ttyS0
+  139  sudo screen /dev/ttyAMA0
+  140  putty /dev/ttyAMA0 9600
+  141  sudo putty /dev/ttyAMA0 9600
+  142  sudo screen /dev/ttyAMA0 9600
+  143  pip uninstall serial
+  144  pip install serialpy
+  145  pip install pyserial
+  146  pip3 uninstall serial
+  147  pip3 install pyserial
+  148  python -version
+  149  python -v
+  150  python -version
+  151  sudo install pyserial pip3
+  152  sudo install pip3
+  153  ls
+  154  cd python_ws/
+  155  ls
+  156  sudo python serial_write.py
+  157  ls
+  158  cd Downloads/
+  159  ls
+  160  dpkg -i synergy-v1.8.8-stable-Linux-i686.deb 
+  161  sudp dpkg -i synergy-v1.8.8-stable-Linux-i686.deb 
+  162  sudo dpkg -i synergy-v1.8.8-stable-Linux-i686.deb 
+  163  sudo apt-get update
+  164  sudo apt-get install build-essential cmake libavahi-compat-libdnssd-dev libcurl4-openssl-dev libssl-dev python qt4-dev-tools xorg-dev
+  165  cd ..
+  166  wget https://github.com/symless/synergy/archive/master.zip
+  167  sget https://github.com/symless/synergy-core
+  168  wget https://github.com/symless/synergy-core
+  169  git clone https://github.com/symless/synergy-core
+  170  cd synergy-core/
+  171  ls
+  172  ./hm.sh conf -g1
+  173  mkdir build
+  174  cd build/
+  175  cmake ..
+  176  make
+  177  cd bin/
+  178  ls
+  179  ./synergyc
+  180  ./synergy-core 
+  181  ./synergy-core -h
+  182  ./synergy-core --client
+  183  ./synergy-core --help
+  184  synergy-core --help
+  185  ./synergy-core 12.255.42.67
+  186  ./synergy-core 10.255.42.67
+  187  ./synergy-core --client 10.255.42.67
+  188  ./synergy-core --server
+  189  ./synergy-core --client 10.255.24.144
+  190  cd synergy-core/
+  191  ls
+  192  cd build/
+  193  ls
+  194  cd bin/
+  195  ls
+  196  cd synergy-core/
+  197  ./synergy-core --client 10.255.24.144
+  198  ./synergy-core --server 
+  199  ./synergy-core --help
+  200  ./synergy-core --client 10.255.24.144
+  201  du -sh /var/cache/apt/archives/
+  202  sudo apt-get clean
+  203  ls
+  204  du -sh /var/cache/apt/archives/
+  205  netcat -u -l 5001
+  206  nano /boot/config.txt
+  207  ls
+  208  netcat
+  209  netcat -u -l 5001
+  210  pip install parse
+  211  pip3 install parse
+  212  netcat -u -l 5001
+  213  screen /dev/ttyAMA0
+  214  011518010840, 2702, 24, 62, 13185, 26748, 35814, 00, 05, 50, 49
+  215  011518010840, 3115, 24, 61, 13211, 26740, 35634, 00, 05, 50, 50
+  216  ls -l /dev/ttyAMA0
+  217  sudo adduser pi dialout
+  218  netcat -u -l 5001
+  219  ls
+  220  sudo apt-get install libfftw3-dev
+  221  sudo apt-get install libconfig-dev
+  222  sudo apt-get install libasound2-dev
+  223  git clone https://github.com/introlab/odas.git
+  224  cd odas
+  225  mkdir build
+  226  cd build
+  227  cmake ../
+  228  make
+  229  ./server
+  230  ls
+  231  cd ..
+  232  ls
+  233  cd bin
+  234  ls
+  235  ./odasserver
+  236  ./odaslive -c configfile4.cfg -v
+  237  ./odaslive -c configfile5.cfg -v
+  238  netcat -u 10.255.42.67
+  239  netcat -u 10.255.42.67 9000
+  240  ./odaslive -c configfile5.cfg -v
+  241  sudo ./odaslive -c configfile5.cfg -v
+  242  netcat -u -l 9000
+  243  netcat -l -u 5001
+  244  cd odas/
+  245  ls
+  246  cd bin/
+  247  ls
+  248  ./odaslive -c configfile5.cfg -v
+  249  ls -l
+  250  chmode a-x odaslive 
+  251  chmod a-x odaslive 
+  252  ls -l
+  253  ./odaslive -c configfile5.cfg -v
+  254  chmod a+x odaslive 
+  255  ls -l
+  256  ./odaslive -c configfile5.cfg -v
+  257  chmod ag+x odaslive 
+  258  ls -l
+  259  chmod ag+r odaslive 
+  260  chmod ag+w odaslive 
+  261  ls -l
+  262  ./odaslive -c configfile5.cfg -v
+  263  netcat -l -u 9002
+  264  netcat -l -u 9000
+  265  cd odas/bin/
+  266  ls
+  267  ./odaslive -c configfile5.cfg -v
+  268  sudo ./odaslive -c configfile5.cfg -v
+  269  reboot now
+  270  sudo reboot now
+  271  -netcat -u -l 9000
+  272  netcat -u -l 9000
+  273  cd odas/
+  274  cd bin
+  275  ls
+  276  sudo ./odaslive -c configfile5.cfg -v
+  277  ls
+  278  sudo ./odaslive -c configfile5.cfg -v
+  279  ./odaslive -c configfile5.cfg -v
+  280  cd ..
+  281  ls
+  282  cd b
+  283  cd bin/
+  284  ls
+  285  ./odaslive -c configfile5.cfg -v
+  286  sudo odaslive -c configfile5.cfg -v
+  287  cd ..
+  288  ls
+  289  cmake
+  290  cmake .
+  291  make
+  292  cd bin/
+  293  ls
+  294  sudo odaslive -c configfile4.cfg -v
+  295  ./odaslive -c configfile4.cfg -v
+  296  ./odaslive -c myConfigFile4.cfg -v
+  297  ls
+  298  cd python_ws/
+  299  ls
+  300  cd ..
+  301  cd odas/
+  302  ls
+  303  cd bin/
+  304  ls
+  305  ./odaslive -c myConfigFile4.cfg -v
+  306  cd odas/
+  307  cd bin/
+  308  ./odaslive -c myConfigFile4.cfg -v
+  309  ls
+  310  cd odas/bin/
+  311  ./odaslive -c myConfigFile4.cfg -v
+  312  cd odas/
+  313  cd bin/
+  314  ./odaslive -c myConfigFile4.cfg -v
+  315  sudo apt-get update
+  316  ls
+  317  sudo apt-get install realvnc-vnc-server
+  318  sudo raspi-config
+  319  ifconfig -a
+  320  ./odaslive -c myConfigFile4.cfg -v
+  321  ifconfig -a
+  322  cd ..
+  323  ls
+  324  cd ..
+  325  cd udp-image-streaming/
+  326  ls
+  327  ./client 
+  328  ./client 10.255.42.56
+  329  ./client 10.255.42.56 4000
+  330  make
+  331  ./client 10.255.42.56 4000
+  332  ls
+  333  vncserver
+  334  reboot now
+  335  sudo reboot now
+  336  ls
+  337  vncserver
+  338  power off
+  339  poweroff 
+  340  sudo poweroff 
+  341  vncserver
+  342  ls
+  343  cd odas/bin/
+  344  ls
+  345  ./odaslive -c myConfigFile4.cfg -v
+  346  shotdownnow
+  347  shutdown now
+  348  sudo shutdown now
+  349  ls
+  350  vncserver
+  351  ls
+  352  shutdown now
+  353  sudo shutdown now
+  354  ls 
+  355  cd udp-image-streaming/
+  356  ls
+  357  ./client 
+  358  ./client 10.255.42.67
+  359  ./client 10.255.42.67 9000
+  360  vncserver
+  361  ls
+  362  cd python_ws/
+  363  ls
+  364  cd Temp\&Gas_UDP_4Vicario/
+  365  ls
+  366  ./pymotw5.py
+  367  sudo ./pymotw5.py
+  368  ls
+  369  passwd
+  370  sudo passwd pi
+  371  exit
+  372  ifconfig -a
+  373  cd odas/
+  374  ls
+  375  cd bin
+  376  ls
+  377  ./odaslive -c myConfigFile4.cfg -v
+  378  ls
+  379  nano myConfigFile4.cfg 
+  380  ./odaslive -c myConfigFile4.cfg -v
+  381  ifconfig -a
+  382  ./odaslive -c myConfigFile4.cfg -v
+  383  shytdown now
+  384  sudo shytdown now
+  385  sudo shutdown now
+  386  ls
+  387  cd python_ws/
+  388  ls
+  389  cd ..
+  390  ls
+  391  cd odas/
+  392  cd b
+  393  cd bin
+  394  ls
+  395  cd ../..
+  396  ls
+  397  cd python_ws/
+  398  ks
+  399  ls
+  400  cd Temp\&Gas_UDP_4Vicario/
+  401  ks
+  402  ls
+  403  nano pymotw6.py 
+  404  cd 
+  405  cd odas/
+  406  ls
+  407  cd bin
+  408  ls
+  409  ./odaslive -c myConfigFile4.cfg -v
+  410  ls
+  411  cd
+  412  cd odas/bin
+  413  ls
+  414  ./odaslive -c myConfigFile4.cfg -v
+  415  sudo shutdown now
+  416  cd odas/bin
+  417  ls
+  418  ./odaslive -c myConfigFile4.cfg -v
+  419  sudo shutdown now
+  420  ls
+  421  cd python_ws
+  422  ls
+  423  cd T
+  424  cd Temp\&Gas_UDP_4Vicario/
+  425  ls
+  426  nano pymotw6.py 
+  427  ls
+  428  cd ..
+  429  ls
+  430  cd Temp\&Gas_UDP_4Vicario/
+  431  ls
+  432  nano pymotw6.py 
+  433  cd ..
+  434  ls
+  435  cd ..
+  436  ls
+  437  cd odas/
+  438  ls
+  439  cd src/
+  440  ls
+  441  shoutdown now
+  442  sudo shoutdown now
+  443  sudo shotdown now
+  444  sudo shutdown now
+  445  history > history.txt
