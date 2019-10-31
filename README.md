@@ -32,13 +32,14 @@ As an initial development, the DGS-CO was chosen for measuring Carbon Monoxide. 
 **Requirments:**
 
 Humans usually utilize sound source localization, separation, and identification enabling them to
-operate properly in hazardous environments [29]. However, in robotic teleoperation, without the
+operate properly in hazardous environments. However, in robotic teleoperation, without the
 human being present in the environment, this sound information may not be communicated as is to
 the operator who remotely controls the robot. Communicating the different sound-based
 environmental feedback to the operator can give them more perception of the field more effectively.
 
 Being aware of the surrounding sound activity can allow the operator to plan the next steps in the
 operation, avoid dangers, detect human activity, etc.
+
 In this project, having this acoustic information can be very helpful. Not only can it help to find potential
 survivors in disaster scenarios, but also help the operators to localize different sounds in the
 environment. For instance, explosions, gas leaks, building collapses, etc., can be detected by the
@@ -71,17 +72,23 @@ For transmission of the acoustic data to the MASTER station, here again a Linux-
 adopted. The acquired microphone digital data is transmitted to a processing unit. The processing unit
 implements the ODAS library and performs data processing in three steps: 
 
-(i) Data pre-processing – using the MicST (Microphone Signal Transform, [31]) data structure to transform the time-domain
+(i) Data pre-processing – using the MicST (Microphone Signal Transform) data structure to transform the time-domain
 signal of each microphone (sampled at 48,000 samples/sec) in weighted frequency frames. Further,
 the MCRA (Minimum Controlled Recursive Averaging) function estimates the spectrum of the
-stationary noise during silence periods [33], so as to subtract it during processing; 
+stationary noise during silence periods, so as to subtract it during processing; 
 
 (ii) Localization – to localize up to four different sound sources using Beam-forming algorithm; and 
 
 (iii) Tracking – the detected sound source using particle filter. This information is then transmitted to the master station
 through the UDP packets and finally represented in the VR environment. It is worth mentioning that
-all of the UDP packets are organized in JSON standard in order to have the unique shape. Figure 30
-shows the overall block diagram of the acoustic data transmission. 
+all of the UDP packets are organized in JSON standard in order to have the unique shape.
+
+* [Connection Diagram]()
+* [Sample Code]()
+* [To configure UART]()
+* [Code which works in rpi3]()
+
+
 
 ## [Thermal Camera]()
 
