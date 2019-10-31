@@ -61,8 +61,7 @@ To acquire data from the microphone array and analyse its behaviour, the [ManyEa
 is an open source software prevalent for robotic applications. The framework provides sound
 source localization, tracking, separation, as well as post-filtering. 
 
-The [ODAS (Open Embedded Audition System)](https://github.com/introlab/odas) library is a software package, which uses the ManyEars framework at its core and builds a user interface to test the different algorithms for sound analysis. For the initial testing of the device, the ODAS library was used. ODAS is coded entirely in C for easy portability, and is optimized to run on
-low-cost embedded hardware. It is free and open source. ODAS Studio is a desktop interface that
+The [ODAS (Open Embedded Audition System)](https://github.com/introlab/odas) library is a software package, which uses the ManyEars framework at its core and builds a user interface to test the different algorithms for sound analysis. For the initial testing of the device, the ODAS library was used. ODAS is coded entirely in C for easy portability, and is optimized to run on low-cost embedded hardware. It is free and open source. ODAS Studio is a desktop interface that
 visually represents the data acquired by the ODAS algorithm and manages the recordings of separated
 audio sources. The audio energy and tracked audio sources are represented on a unit sphere. 
 
@@ -70,13 +69,16 @@ In this mode, the overall direction of the tracked sound source can be localized
 
 For transmission of the acoustic data to the MASTER station, here again a Linux-based solution was
 adopted. The acquired microphone digital data is transmitted to a processing unit. The processing unit
-implements the ODAS library and performs data processing in three steps: (i) Data pre-processing –
-using the MicST (Microphone Signal Transform, [31]) data structure to transform the time-domain
+implements the ODAS library and performs data processing in three steps: 
+
+(i) Data pre-processing – using the MicST (Microphone Signal Transform, [31]) data structure to transform the time-domain
 signal of each microphone (sampled at 48,000 samples/sec) in weighted frequency frames. Further,
 the MCRA (Minimum Controlled Recursive Averaging) function estimates the spectrum of the
-stationary noise during silence periods [33], so as to subtract it during processing; (ii) Localization – to
-localize up to four different sound sources using Beam-forming algorithm; and (iii) Tracking – the
-detected sound source using particle filter. This information is then transmitted to the master station
+stationary noise during silence periods [33], so as to subtract it during processing; 
+
+(ii) Localization – to localize up to four different sound sources using Beam-forming algorithm; and 
+
+(iii) Tracking – the detected sound source using particle filter. This information is then transmitted to the master station
 through the UDP packets and finally represented in the VR environment. It is worth mentioning that
 all of the UDP packets are organized in JSON standard in order to have the unique shape. Figure 30
 shows the overall block diagram of the acoustic data transmission. 
