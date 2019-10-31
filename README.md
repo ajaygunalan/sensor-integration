@@ -25,11 +25,30 @@ As an initial development, the DGS-CO was chosen for measuring Carbon Monoxide. 
 
 **Description**
 
+There are four types of sensors for measuring the ambient temperature: 
+(i) Negative Temperature Coefficient (NTC)
+(ii) Resistance Temperature Detector (RTD)
+(iii) Thermocouple
+(iv) Semiconductor-based sensors.
+
+Considering the project requirements, DS18B20 waterproof digital temperature sensor from Adafruit was selected, which is a semiconductor-based sensor. The 1-wire technology uses the serial protocol with a single communication line. A 1-Wire master
+initiates and controls the communication with one or more 1-Wire slave devices on the 1-Wire bus.
+
+Each 1-Wire slave device has a unique, unalterable, factory-programmed, 64-bit ID, which serves as device address on the 1-Wire bus. We can connect as many DS18B20 sensors as we need in parallel.
+
+As per the sensor datasheet, it takes 750 ms for the sensor reading. Therefore, a 1 Hz
+frequency of reading for this sensor was chosen. This should not be a problem since temperature itself
+is a slow variable and does not change very fast.
+
+* [Connection Diagram]()
+* [Sample Code]()
+* [To configure UART]()
+* [Code which works in rpi3]()
+
+
 ## [Microphone]()
 
 **Description**
-
-**Requirments:**
 
 Humans usually utilize sound source localization, separation, and identification enabling them to
 operate properly in hazardous environments. However, in robotic teleoperation, without the
@@ -93,3 +112,36 @@ all of the UDP packets are organized in JSON standard in order to have the uniqu
 ## [Thermal Camera]()
 
 **Description**
+
+Thermal imaging camera is a device that forms an image using infrared radiation in the **14000 nm**
+wavelength range. Having a thermal imaging camera can enable the operator to see the distribution
+of the temperature in an environment, the hot or cold places in the environment. This can, in turn, be used to
+identify very hot areas or recognize gas leaks, living beings, etc. In this sense, thermal imaging can provide additional information that is not readily available to the naked eye.
+
+There are various types of the thermal cameras available with different specifications
+in terms of sensor size, frame rate, etc. [FLIR’s C3 thermal camera](https://www.flir.com/products/c3/)  was chosen
+based on the constraints of desired quality vs.
+weight and cost. 
+
+It comes recommended for inspections within buildings and facilities, which lends itself very
+well with the use-cases identified for this project.
+
+Moreover, the camera has a live video streaming over USB as well as wifi. The image shows the overall distribution of temperature in the field-ofview through colour. The cursor can be used to pinpoint the temperature at a particular location.
+
+The limitation is that the sensor needs to be calibrated or held on a particular view for a few seconds
+before the temperature stabilizes. Additionally, the depth information of a particular location is not
+available. Therefore, the thermal image needs to be used in combination with other information from
+the environment to make sense of the data.
+
+For transmission of the thermal camera video to the MASTER station, a Linux-based solution was
+adopted. The OpenCV library is well suited to acquire and transmit the image with optimal latency,
+frequency, and image quality.The video stream is acquired through OpenCV’s input function and encoded into the jpeg format
+to reduce bandwidth. After that, the encoded frame is sent over a UDP socket to the master station
+and it is finally shown in the VRE. Based on preliminary experiments, this method allows a transmission
+frequency up to 69 frames-per-second.
+
+
+* [Connection Diagram]()
+* [Sample Code]()
+* [To configure UART]()
+* [Code which works in rpi3]()
