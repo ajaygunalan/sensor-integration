@@ -21,7 +21,8 @@ As an initial development, the DGS-CO was chosen for measuring Carbon Monoxide. 
 
 
 
-## [Temperature Sensor]()
+## [Temperature Sensor](https://www.adafruit.com/product/381)
+
 
 **Description**
 
@@ -40,11 +41,19 @@ As per the sensor datasheet, it takes 750 ms for the sensor reading. Therefore, 
 frequency of reading for this sensor was chosen. This should not be a problem since temperature itself
 is a slow variable and does not change very fast.
 
-* [Connection Diagram]()
+* Connection Diagram
+If your sensor has three wires:
+
+Red connects to 3-5V, 
+Blue/Black connects to ground
+Yellow/White is data
+
 * [Sample Code]()
 * [To configure UART]()
 * [Code which works in rpi3]()
 
+**Reference**
+* [youtube video](https://www.youtube.com/watch?v=SHOO7wIRVCs)
 
 ## [Microphone]()
 
