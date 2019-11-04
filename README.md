@@ -41,16 +41,13 @@ As per the sensor datasheet, it takes 750 ms for the sensor reading. Therefore, 
 frequency of reading for this sensor was chosen. This should not be a problem since temperature itself
 is a slow variable and does not change very fast.
 
-* Connection Diagram
-If your sensor has three wires:
+Connections, If your sensor has three wires:
 
-Red connects to 3-5V, 
-Blue/Black connects to ground
-Yellow/White is data
+* Red to 3-5V 
+* Blue to ground
+* Yellow to GPIO(data)
 
-* [Sample Code]()
-* [To configure UART]()
-* [Code which works in rpi3]()
+* [Code which works in rpi3](https://github.com/ajaygunalan/sensor-integration/blob/master/thermometer.py)
 
 **Reference**
 * [youtube video](https://www.youtube.com/watch?v=SHOO7wIRVCs)
