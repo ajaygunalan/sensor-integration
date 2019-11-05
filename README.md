@@ -116,6 +116,8 @@ stationary noise during silence periods, so as to subtract it during processing;
 through the UDP packets and finally represented in the VR environment. It is worth mentioning that
 all of the UDP packets are organized in JSON standard in order to have the unique shape.
 
+**To Get Data from the Mic**
+
 1. Install odas, follow the steps [here](https://github.com/introlab/odas/wiki/installation).
 2. Then [install odas web](https://github.com/introlab/odas_web)
 3. Go to odas web directory and run `npm start`
@@ -156,8 +158,3 @@ to reduce bandwidth. After that, the encoded frame is sent over a UDP socket to 
 and it is finally shown in the VRE. Based on preliminary experiments, this method allows a transmission
 frequency up to 69 frames-per-second.
 
-
-* [Connection Diagram]()
-* [Sample Code]()
-* [To configure UART]()
-* [Code which works in rpi3]()
