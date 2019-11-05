@@ -3,6 +3,14 @@ Integration of Thermal Camera, Mic, Temperature and Gas Sensors with ubuntu.
 
 The [history.txt](https://github.com/ajaygunalan/sensor-integration/blob/master/history.txt) contains the list of all commands used by the previous engineer to get the sensors work in rpi3. 
 
+## Contents
+
+1. [Gas Sensor](#gas-sensor)
+2. [Temperature Sensor](#temperature-sensor)
+3. [Microphone](#microphone)
+4. [Thermal Camera](#thermal-camera)
+
+
 ## To Do
 
 1. Integrate with RPI3 to see if sensors work properly and also to understand about the interface.
@@ -108,10 +116,12 @@ stationary noise during silence periods, so as to subtract it during processing;
 through the UDP packets and finally represented in the VR environment. It is worth mentioning that
 all of the UDP packets are organized in JSON standard in order to have the unique shape.
 
-* [Connection Diagram]()
-* [Sample Code]()
-* [To configure UART]()
-* [Code which works in rpi3]()
+1. Install odas, follow the steps [here](https://github.com/introlab/odas/wiki/installation).
+2. Then [install odas web](https://github.com/introlab/odas_web)
+3. Go to odas web directory and run `npm start`
+4. In another terminal, go to `/odas/bin` and then make sure to have [this config file.](https://github.com/ajaygunalan/sensor-integration/blob/master/myConfigFile_OK.cfg)
+5. Now, run `./odaslive -c myConfigFile_OK.cfg -v`
+
 
 
 
