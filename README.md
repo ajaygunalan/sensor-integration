@@ -20,7 +20,7 @@ The [history.txt](https://github.com/ajaygunalan/sensor-integration/blob/master/
 
 **Description**
 
-As an initial development, the DGS-CO was chosen for measuring Carbon Monoxide. The DGS-CO is an electro-chemical sensor produced by the SPEC SENSORS company for ambient monitoring purposes. It gives the calibrated and temperature-compensated CO gas value as well as Temperature and Relative Humidity values. The sensor uses the serial communication protocol over UART. To acquire data, the sensor is easily connected to any microcontroller through its serial communication port. The connection parameters use **9600 baud** and require **3.3V**.
+The DGS-CO is an electro-chemical sensor produced by the SPEC SENSORS company for ambient monitoring purposes. It gives the calibrated and temperature-compensated CO gas value as well as Temperature and Relative Humidity values. The sensor uses the serial communication protocol over UART. To acquire data, the sensor is easily connected to any microcontroller through its serial communication port. The connection parameters use **9600 baud** and require **3.3V**.
 
 * [Connection Diagram](https://github.com/ajaygunalan/sensor-integration/blob/master/gas_to_rpi.png)
 * [Sample Code](https://github.com/ajaygunalan/sensor-integration/blob/master/gas_sensor/pic/sample_code_for_algo.png)
@@ -55,7 +55,7 @@ Connections, If your sensor has three wires:
 * Blue to ground
 * Yellow to GPIO(data)
 
-* [Code which works in rpi3](https://github.com/ajaygunalan/sensor-integration/blob/master/thermometer.py)
+* [Code which works in rpi3](https://github.com/ajaygunalan/sensor-integration/blob/master/thermometer/thermometer.py)
 
 **Reference**
 * [youtube video](https://www.youtube.com/watch?v=SHOO7wIRVCs)
@@ -154,7 +154,7 @@ the environment to make sense of the data.
 
 **To stream the data in Ubuntu**
 
-Not able detect the camera with [FlyCapture SDK](https://github.com/ajaygunalan/sensor-integration/blob/master/tan2012007-using-linux-usb3.pdf).
+Not able detect the camera with [FlyCapture SDK](https://github.com/ajaygunalan/sensor-integration/blob/master/thermal_camera/tan2012007-using-linux-usb3.pdf).
 
 But was able to view the video stream usign cheese, guvcview and in vlc.
 
@@ -163,6 +163,10 @@ But was able to view the video stream usign cheese, guvcview and in vlc.
 `sudo apt-get install cheese` and run `cheese` or
 
  vlc->Media->Open Capture device->select the video device name it should like `/dev/video0`. You can find yours by `ls /dev/video*`
+ 
+**[Compress and stream live images over UDP protocol with OpenCV](https://github.com/chenxiaoqino/udp-image-streaming)**
+
+Based on preliminary experiments, this method allows a transmission frequency up to **69 frames-per-second**.
 
 **Reference**
 
@@ -172,13 +176,4 @@ But was able to view the video stream usign cheese, guvcview and in vlc.
 
 
 
-
-Misc:
-
-For transmission of the thermal camera video to the MASTER station, a Linux-based solution was
-adopted. The OpenCV library is well suited to acquire and transmit the image with optimal latency,
-frequency, and image quality.The video stream is acquired through OpenCV’s input function and encoded into the jpeg format
-to reduce bandwidth. After that, the encoded frame is sent over a UDP socket to the master station
-and it is finally shown in the VRE. Based on preliminary experiments, this method allows a transmission
-frequency up to 69 frames-per-second.
 
