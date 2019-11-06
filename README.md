@@ -123,11 +123,11 @@ all of the UDP packets are organized in JSON standard in order to have the uniqu
 3. Go to odas web directory and run `npm start`
 4. In another terminal, go to `/odas/bin` and then make sure to have [this config file.](https://github.com/ajaygunalan/sensor-integration/blob/master/myConfigFile_OK.cfg)
 5. Now, run `./odaslive -c myConfigFile_OK.cfg -v`
+https://www.flir.com/products/c3/
 
 
 
-
-## [Thermal Camera]()
+## [Thermal Camera](https://www.flir.com/products/c3/)
 
 **Description**
 
