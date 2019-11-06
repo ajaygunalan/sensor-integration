@@ -154,7 +154,7 @@ the environment to make sense of the data.
 
 **To stream the data in Ubuntu**
 
-Not able detect thE camera with [FlyCapture SDK](https://github.com/RhobanDeps/flycapture).
+Not able detect thE camera with [FlyCapture SDK](https://github.com/ajaygunalan/sensor-integration/blob/master/tan2012007-using-linux-usb3.pdf).
 
 But was able to view the video stream usign cheese, guvcview and in vlc.
 
@@ -168,6 +168,8 @@ But was able to view the video stream usign cheese, guvcview and in vlc.
 
 * [a](https://gist.github.com/endolith/2052778)
 * [b](http://www.linuxintro.org/wiki/Set_up_a_Webcam_with_Linux)
+* [c](https://github.com/RhobanDeps/flycapture)
+
 
 
 
