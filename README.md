@@ -151,6 +151,28 @@ before the temperature stabilizes. Additionally, the depth information of a part
 available. Therefore, the thermal image needs to be used in combination with other information from
 the environment to make sense of the data.
 
+
+**To stream the data in Ubuntu**
+
+Not able detect thE camera with [FlyCapture SDK](https://github.com/RhobanDeps/flycapture).
+
+But was able to view the video stream usign cheese, guvcview and in vlc.
+
+`sudo apt-get install guvcview` and run `guvcview` or
+
+`sudo apt-get install cheese` and run `cheese` or
+
+ vlc->Media->Open Capture device->select the video device name it should like `/dev/video0`. You can find yours by `ls /dev/video*`
+
+**Reference**
+
+* [a](https://gist.github.com/endolith/2052778)
+* [b](http://www.linuxintro.org/wiki/Set_up_a_Webcam_with_Linux)
+
+
+
+Misc:
+
 For transmission of the thermal camera video to the MASTER station, a Linux-based solution was
 adopted. The OpenCV library is well suited to acquire and transmit the image with optimal latency,
 frequency, and image quality.The video stream is acquired through OpenCV’s input function and encoded into the jpeg format
